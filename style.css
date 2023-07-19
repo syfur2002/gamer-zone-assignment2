@@ -80,10 +80,88 @@
     height: auto;
 }
 /* gamer section */
+.gamer-container{
+    background-color: rgba(255, 66, 165, 0.03);
+}
+.gamer{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 40px;
+}
+.gamer-left img{
+    width: 550px;
+    height: auto;
+}
+.gamer-right{
+    text-align: right;
+}
+.gamer-right h1{
+    font-size: 25px;
+    font-weight: 900;
+    color: #F948B2;
+}
+.gamer-right p{
+    font-size: 13px;
+    font-weight: 200;
+}
+.gamer-right h4{
+    font-weight: 400;
+}
+.gamer-right h3{
+    font-weight: 800;
+}
+/* online game section */
+.online-game-title{
+    text-align: center;
+}
+.online-game-title h1{
+    font-weight: 800;
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+.online-game-title p{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.funny{
+    color: rgba(249, 72, 178, 1);
+    display: inline-block;
+}
+.online-game-box{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.game-box img{
+    width: 205px;
+    border-radius: 8px;
+}
+.game-box p{
+    font-size: 12px;
+    position: relative;
+    bottom: 100px;
+}
 
+.hover i{
+    font-size: 35px;
+    color: #fff;
+}
+.hover h6{
+    color: red;
+    font-size: 12px;
+}
+.game-box .hover{
+position: relative;
+bottom: 150px;
+text-align: center;
+opacity: 0;
+transition: .3s;
+}
 
-
-
+.game-box .hover:hover{
+    opacity: 1;
+}
 
 /* media query */
 /* mobile responsive */
@@ -103,7 +181,6 @@
     .banner{
         flex-direction: column;
         margin-top: 150px;
-
     }
     .banner-left{
     
@@ -117,21 +194,55 @@
         width: 300px;
         height: auto;
     }
+    .gamer{
+        flex-direction: column;
+        margin: 20px 30px;
+    }
+    .gamer-left img{
+    width: 350px;
+    padding-left:0%;
+    }
+    .gamer-right{
+        text-align: center;
+    }
+    .online-game-container{
+        margin: auto;
+    }
+    .online-game-box{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        margin-bottom: 0px;
+    }
 }
+
+
+
+
 
 /* tablet device responsive */
 @media screen and (min-width:427px) and (max-width:769px) {
 
     .nav-container{
         margin-left: 100px;
-        margin-right: 100px;
-        
+        margin-right: 100px; 
     }
-
     .banner{
         flex-direction: column;
     }
-
-
-
+    .gamer{
+        flex-direction: column;
+        margin: 20px 50px;
+    }
+    .gamer-left img{
+        width: 650px;
+    }
+    .gamer-right{
+        text-align: center;
+    }
+    .online-game-box{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    .game-box{
+        margin: 0 30px;
+    }
 }
