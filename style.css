@@ -162,6 +162,113 @@ transition: .3s;
 .game-box .hover:hover{
     opacity: 1;
 }
+/* play containber */
+.play-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.play-left{
+    margin-bottom: 100px;
+}
+.play-left h1{
+ font-size: 35px;
+ font-weight: 800;
+}
+.lal-play{
+    color:#F948B2;
+}
+.play-left p{
+    font-size: 12px;
+    font-weight: 400;
+}
+.play-right{
+ margin-left:200px;
+}
+.play-img-up{
+    width: 370px;
+    height: auto;
+}
+.play-img-down{
+    width: 120px;
+    position: relative;
+    bottom: 105px;
+    right: 65px;
+}
+
+li{
+    list-style: none;
+}
+/* career section */
+.career-container{
+    background-color: #F948B2;
+}
+.career{
+    display: flex;
+    margin-left: 180px;
+    align-items: center;
+}
+.career-head{
+    font-size: 30px;
+}
+.career-discript{
+    font-weight: 400;
+}
+.career-left{
+    color: #fff;
+}
+.career-image{
+    width: 600px;
+    height: auto;
+}
+.bam-dan{
+    display: flex;
+    gap: 120px;
+    font-size: 13px;
+}
+.bam-dan .bam{
+    padding-left: 0;
+}
+ul li{
+    margin: 10px 0;
+}
+.secondbtn{
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+    color: #F948B2;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+}
+/* games section */
+.gam-container{
+    margin: 100px 200px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    gap: 20px;
+
+}
+.gam-box img{
+    width: 30px;
+}
+.gam-box h6{
+    font-size: 14px;
+}
+.gam-box{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.gam-box:hover{
+    height: 40px;
+    width: 150px;
+    border: 1px solid #F948B2;
+    border-radius: 30px;
+    color: #F948B2;
+}
+
 
 /* media query */
 /* mobile responsive */
@@ -213,6 +320,35 @@ transition: .3s;
         justify-items: center;
         margin-bottom: 0px;
     }
+    .play-container{
+        flex-direction: column;
+    }
+    .play-left{
+        text-align: center;
+    }
+    .play-right{
+        margin-left: 0;
+    }
+    .play-img-up{
+        width: 300px;
+    }
+    .play-img-down{
+        width: 110px;
+    }
+    .career{
+        flex-direction: column;
+        margin-left: 50px;
+    }
+    .bam-dan{
+        gap: 40px;
+    }
+    .career-image{
+        width: 100%;
+    }
+    .gam-container{
+        margin: 50px 15px;
+        grid-template-columns:repeat(3, 1fr)   
+     }
 }
 
 
@@ -241,8 +377,35 @@ transition: .3s;
     }
     .online-game-box{
         grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
+        justify-content: center;}
     .game-box{
         margin: 0 30px;
+    }
+    .play-container{
+        flex-direction: column;
+    
+    }
+    .play-right{
+        padding-right: 150px;
+    }
+    .play-left{
+        text-align: center;
+    }
+    .career{
+        flex-direction: column;
+    }
+    .career-left{
+        margin-left: -100px;
+        margin-right: 100px;
+    }
+    .bam-dan{
+        gap: 150px;
+    }
+    .career-image{
+        width: 100%;
+    }
+    .gam-container{
+        margin: 60px 120px;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
