@@ -1,0 +1,137 @@
+
+
+
+
+
+.common-margin{
+    margin-left: 180px;
+    margin-right: 180px;
+}
+.btn-primary{
+    width: 100px;
+    height: 40px;
+    background-color:#e773b8;
+    color: #fff;
+    border: none;
+    border-radius: 35px;
+}
+
+
+
+/* nav section */
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+.left-nav{
+ display: flex;
+ align-items: center;
+ gap: 8px;
+}
+.left-nav img{
+    width: 50px;
+    height: 27px;
+}
+.nav-title{
+    font-size: 25px;
+}
+.right-nav{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+}
+.follow-btn{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    height: 40px;
+    width: 200px;
+    background-color: lightgray;
+    border-radius: 8px;
+    text-align: center;
+    padding-left: 25px;
+}
+/* banner section */
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-left .play{
+    font-size: 35px;
+    margin: 10px 0;
+}
+.banner-left .goat{
+    font-size: 50px;
+    color: #F948B2;
+    margin: 0;
+    font-weight: 800;
+}
+.banner-text{
+    font-size: 14px;
+    margin: 15px 0px;
+}
+
+.banner-image{
+    width: 550px;
+    height: auto;
+}
+/* gamer section */
+
+
+
+
+
+/* media query */
+/* mobile responsive */
+@media screen and (max-width:426px) {
+    .nav-container{
+        flex-direction: column;
+        margin: 100px auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .right-nav{
+        flex-direction: column;
+    }
+    .right-nav h6{
+        margin: 10px;
+    }
+    .banner{
+        flex-direction: column;
+        margin-top: 150px;
+
+    }
+    .banner-left{
+    
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .banner-button button{
+        margin-top: 20px;
+    }
+    .banner-image{
+        width: 300px;
+        height: auto;
+    }
+}
+
+/* tablet device responsive */
+@media screen and (min-width:427px) and (max-width:769px) {
+
+    .nav-container{
+        margin-left: 100px;
+        margin-right: 100px;
+        
+    }
+
+    .banner{
+        flex-direction: column;
+    }
+
+
+
+}
